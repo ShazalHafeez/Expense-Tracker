@@ -9,8 +9,13 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: #2a2a2a;
+margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #2d2834; */
+  background: radial-gradient(#818082, #2d2c2f);
+  color: #d9c9ee;
 }
 h2 {
   color: white

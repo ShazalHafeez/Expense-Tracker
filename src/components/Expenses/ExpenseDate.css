@@ -10,6 +10,11 @@
     align-items: center;
     justify-content: center;
 }
+.expense-item__date:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s;
+    box-shadow: 0 2px 30px #2a2a2a;
+}
 
 .expense-date__month {
     font-size: 0.75rem;

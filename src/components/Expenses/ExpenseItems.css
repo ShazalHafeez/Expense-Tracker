@@ -5,6 +5,12 @@
     padding: 0.5rem;
     margin: 1rem 0;
     background-color: #4b4b4b;
+    transition: all 0.4s;
+}
+.expense-item:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s;
+    box-shadow: 0 2px 30px rgba(126, 114, 114, 0.25);
 }
 
 .expense-item__description {
@@ -33,6 +39,11 @@
     border: 2px solid white;
     padding: 0.5rem;
     border-radius: 12px;
+}
+.expense-item__price:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s;
+    box-shadow: 0 2px 20px #40005d;
 }
 
 
