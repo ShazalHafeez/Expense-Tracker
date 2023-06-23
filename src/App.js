@@ -1,5 +1,6 @@
 import Expenses from "./components/Expenses/Expenses";
 import Card from "./components/UI/Card"
+import NewExpense from "./components/NewExpense/NewExpense";
 const expenses = [
   {
     id: "e1",
@@ -26,7 +27,7 @@ function App() {
   return (
     <div>
       <Card>
-        <h2>Expense Tracker</h2>
+        <NewExpense />
       </Card>
 
       <Expenses expenses_list={expenses} />

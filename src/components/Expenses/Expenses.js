@@ -1,9 +1,9 @@
-import ExpenseItems from "./ExpenseItems";
-import "./Expenses.css"
-import Card from "../UI/Card"
-export default function Expenses(props) {
-  //console.log(props[0].amount);
 
+import ExpenseItems from "./ExpenseItems";
+import "./Expenses.css";
+import Card from "../UI/Card";
+export default function Expenses(props) {
+  
   return (
     <Card className="expenses">
       <ExpenseItems
