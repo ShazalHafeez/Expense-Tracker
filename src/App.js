@@ -24,10 +24,13 @@ const expenses = [
 ];
 
 function App() {
+  function addExpenseHandler(enteredExpense) {
+    console.log(enteredExpense);
+  }
   return (
     <div>
       <Card>
-        <NewExpense />
+        <NewExpense onAddExpense={addExpenseHandler}/>
       </Card>
 
       <Expenses expenses_list={expenses} />
