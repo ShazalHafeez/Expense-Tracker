@@ -1,5 +1,5 @@
 import Expenses from "./components/Expenses/Expenses";
-import Card from "./components/UI/Card"
+import Card from "./components/UI/Card";
 import NewExpense from "./components/NewExpense/NewExpense";
 const expenses = [
   {
@@ -30,7 +30,7 @@ function App() {
   return (
     <div>
       <Card>
-        <NewExpense onAddExpense={addExpenseHandler}/>
+        <NewExpense onAddExpense={addExpenseHandler} />
       </Card>
 
       <Expenses expenses_list={expenses} />
