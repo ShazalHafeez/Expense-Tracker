@@ -22,3 +22,8 @@
     font-weight: bold;
     border-radius: 6px;
 }
+.expenses-filter option {
+    font: inherit;
+    padding: 0.5rem 4rem;
+    font-weight: bold
+}
