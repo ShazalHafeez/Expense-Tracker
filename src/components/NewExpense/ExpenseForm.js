@@ -46,6 +46,7 @@ function typeChangeHandler(event) {
             type="text"
             onChange={titleChangeHandler}
             value={enteredTitle}
+            placeholder="Enter Name of Product"
           ></input>
         </div>
         <div className="new-expense__control">
@@ -56,6 +57,7 @@ function typeChangeHandler(event) {
             step={0.01}
             onChange={amountChangeHandler}
             value={enteredAmount}
+            placeholder="Enter Amount of Product"
           ></input>
         </div>
         <div className="new-expense__control">
@@ -64,6 +66,7 @@ function typeChangeHandler(event) {
             type="text"
             onChange={typeChangeHandler}
             value={enteredType}
+            placeholder="Enter Type of Product"
           ></input>
         </div>
         <div className="new-expense__control">
@@ -74,6 +77,7 @@ function typeChangeHandler(event) {
             max={"2023-06-23"}
             onChange={dateChangeHandler}
             value={enteredDate}
+            placeholder="Enter Date of Purchase"
           ></input>
         </div>
       </div>
