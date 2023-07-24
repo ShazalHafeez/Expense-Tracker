@@ -38,7 +38,7 @@ function App() {
   function addExpenseHandler(enteredExpense) {
     //this is how we update state which depends on its previous state by using a funtion
     setExpenses((prevExpenses) => {
-      return [...prevExpenses, enteredExpense];
+      return [enteredExpense, ...prevExpenses];
     });
   }
   return (

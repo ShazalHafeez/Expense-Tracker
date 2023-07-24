@@ -47,6 +47,7 @@ function typeChangeHandler(event) {
             onChange={titleChangeHandler}
             value={enteredTitle}
             placeholder="Enter Name of Product"
+            required
           ></input>
         </div>
         <div className="new-expense__control">
@@ -58,6 +59,7 @@ function typeChangeHandler(event) {
             onChange={amountChangeHandler}
             value={enteredAmount}
             placeholder="Enter Amount of Product"
+            required
           ></input>
         </div>
         <div className="new-expense__control">
@@ -78,6 +80,7 @@ function typeChangeHandler(event) {
             onChange={dateChangeHandler}
             value={enteredDate}
             placeholder="Enter Date of Purchase"
+            required
           ></input>
         </div>
       </div>
