@@ -36,7 +36,7 @@ function typeChangeHandler(event) {
     setType("");
 
   }
-
+const today = new Date().toLocaleDateString("en-ca");
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
@@ -75,8 +75,8 @@ function typeChangeHandler(event) {
           <label>Date</label>
           <input
             type="date"
-            min={"2021-01-01"}
-            max={"2023-06-23"}
+            min={"2020-01-01"}
+            max={today}
             onChange={dateChangeHandler}
             value={enteredDate}
             placeholder="Enter Date of Purchase"
