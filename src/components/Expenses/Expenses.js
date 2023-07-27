@@ -5,7 +5,7 @@ import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
 
 export default function Expenses(props) {
-  const [filteredYear, setYear] = useState("2020");
+  const [filteredYear, setYear] = useState("All");
   function yearChangeHandler(selectedYear) {
     setYear(selectedYear);
   }
@@ -17,7 +17,6 @@ export default function Expenses(props) {
   }
 
   return (
-    <li>
       <Card className="expenses">
         <ExpensesFilter
           selected={filteredYear}
@@ -25,6 +24,5 @@ export default function Expenses(props) {
         />
         <ExpensesList list={filteredExpenses} />
       </Card>
-    </li>
   );
 }

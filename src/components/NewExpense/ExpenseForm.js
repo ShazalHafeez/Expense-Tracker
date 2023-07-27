@@ -17,26 +17,25 @@ export default function ExpenseForm(props) {
     setDate(event.target.value);
   }
 
-function typeChangeHandler(event) {
-  setType(event.target.value);
-}
+  function typeChangeHandler(event) {
+    setType(event.target.value);
+  }
 
-  function submitHandler(event){
+  function submitHandler(event) {
     event.preventDefault();
     const expenseData = {
-      title : enteredTitle,
+      title: enteredTitle,
       amount: enteredAmount,
       date: new Date(enteredDate),
-      type: enteredType
+      type: enteredType,
     };
     props.onSaveExpenseData(expenseData);
     setTitle("");
     setAmount("");
     setDate("");
     setType("");
-
   }
-const today = new Date().toLocaleDateString("en-ca");
+  const today = new Date().toLocaleDateString("en-ca");
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
@@ -86,6 +85,7 @@ const today = new Date().toLocaleDateString("en-ca");
       </div>
       <div className="new-expense__actions">
         <button type="submit">Add Expense</button>
+        <button onClick={props.onCancel}>Cancel</button>
       </div>
     </form>
   );
