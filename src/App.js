@@ -46,8 +46,9 @@ function App() {
       <Card>
         <NewExpense onAddExpense={addExpenseHandler} />
       </Card>
-
-      <Expenses expenses_list={expenses} />
+      <Card>
+        <Expenses expenses_list={expenses} />
+      </Card>
     </div>
   );
 }

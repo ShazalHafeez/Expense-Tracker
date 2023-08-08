@@ -3,7 +3,6 @@ import ChartBar from "./ChartBar";
 export default function Chart(props) {
   const dataPointValeus = props.dataPoints.map((dataPoint) => dataPoint.value);
   const totalMax = Math.max(...dataPointValeus);
-  console.log(...dataPointValeus);
   return (
     <div className="chart">
       {props.dataPoints.map((dataPoint) => (
